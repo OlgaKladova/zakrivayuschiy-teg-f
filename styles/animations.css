@@ -18,7 +18,7 @@
     }
 
     to {
-        translate: -4px;
+        translate: 4px;
     }
 }
 
@@ -29,7 +29,7 @@
 
     to {
         scale: 1.5;
-        transform-origin: center;
+        transform-origin: center center;
     }
 }
 
@@ -42,3 +42,67 @@
         opacity: 1;        
     }
 }
+
+
+.sparks {
+    opacity: 0;
+}
+  
+.core {
+    fill: transparent;
+    transition: fill 0.3s 0.03s linear;
+}
+  
+.like-icon:hover .core {
+    fill: var(--accent-color);
+    transition: fill 0.3s linear;
+}
+
+.like-icon:active .core {
+    fill: var(--fill);
+    transition: fill 0.3s linear;
+}
+  
+.like-icon.is-liked .core {
+    fill: var(--fill);
+    transition: fill 0.3s linear;
+}
+  
+.main-body {
+    fill: transparent;
+    transition: fill 0.3s linear;
+}
+ 
+.like-icon:hover .main-body {
+    fill: var(--accent-color);
+    transition: fill 0.3s 0.05s linear;
+}
+  
+.like-icon:active .main-body {
+    fill: var(--fill);
+    transition: fill 0.3s 0.05s linear;
+}
+  
+.like-icon.is-liked .main-body {
+    fill: var(--fill);
+    transition: fill 0.3s 0.05s linear;
+}
+  
+.contour {
+    fill: var(--accent-color);
+    transition: fill 0.1s linear;
+}
+  
+.like-icon.is-liked .contour {
+    fill: var(--fill);
+    transition: fill 0.3s 0.06s linear;
+}
+  
+.like-icon.is-liked .heart {
+    animation: like-scale 0.3s ease-in 1 alternate 0.1s;
+}
+  
+.like-icon.is-liked .sparks {
+    animation: sparks 0.3s ease-in 1 alternate 0.3s ;
+}
+     

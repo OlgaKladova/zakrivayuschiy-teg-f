@@ -9,9 +9,10 @@
     --title-weight: 785;
     --bg-color: #000;
     --accent-color: #00CC14;
+    --mix-color: #00CC14;
     --bg-image: 
-        repeating-linear-gradient(-90deg, #000, transparent 2px),
-        repeating-linear-gradient(#000, transparent 2px),
+        repeating-linear-gradient(90deg,#000 0 2px, transparent 2px 4px),
+        repeating-linear-gradient(#000 0 2px, transparent 2px 4px),
         linear-gradient(#007f0c, #004306);
 }
 
@@ -20,33 +21,23 @@
     --title-weight: 700;
     --bg-color: #fff;
     --accent-color: #000;
+    --mix-color: #fff;
     --bg-image:
-        repeating-linear-gradient(-90deg, #d3d3d3, transparent 2px),
-        repeating-linear-gradient(#d3d3d3, transparent 2px),
+        repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+        repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
         linear-gradient(#e7e7e7 0.01%, #1a1a1a);
 }
 
-.page .theme-light {
-    color: var(--accent-color);
-    background-color: var(--bg-color);
-    background-image: var(--bg-image);
-}
-
 @media (prefers-color-scheme: light) {
-    :root.theme-auto {
+    :root.theme-light {
         --text-weight: 400;
         --title-weight: 700;
         --bg-color: #fff;
         --accent-color: #000;
+        --mix-color: #fff;
         --bg-image:
-            repeating-linear-gradient(-90deg, #d3d3d3, transparent 2px),
-            repeating-linear-gradient(#d3d3d3, transparent 2px),
+            repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+            repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
             linear-gradient(#e7e7e7 0.01%, #1a1a1a);
-    }
-
-    .page .theme-auto {
-        color: var(--accent-color);
-        background-color: var(--bg-color);
-        background-image: var(--bg-image);
     }
 }
