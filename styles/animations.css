@@ -29,7 +29,6 @@
 
     to {
         scale: 1.5;
-        transform-origin: center center;
     }
 }
 
@@ -43,6 +42,9 @@
     }
 }
 
+.heart {
+    transform-origin: center;
+}
 
 .sparks {
     opacity: 0;

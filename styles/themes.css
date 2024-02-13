@@ -29,7 +29,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-    :root.theme-light {
+    :root {
         --text-weight: 400;
         --title-weight: 700;
         --bg-color: #fff;
